@@ -6,7 +6,7 @@ const MyName = () => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false);
-        }, 3000);// simulate a 10 sec loading time
+        }, 5000);// simulate a 5 secs loading time
 }, []);
 
     return (
@@ -15,14 +15,13 @@ const MyName = () => {
                 <div className='
                 flex justify-center 
                 items-center h-32'>
-                    <p className='text-gray-400 text-lg'>.</p>
+                    <p className='text-gray-400 text-lg animate-pulse'>...</p>
                 </div>
 
             ) : (
-                <h1 className="
-                    text-3xl md:text-5xl 
+                <h1 className="text-xl md:text-2xl lg:text-3xl 
                     font-mono text-center
-                     py-8 md:py-12 my-4 md:my-8">
+                     md:py-12 my-4 md:my-8">
                     John | Uchendu
                 </h1>
             )}

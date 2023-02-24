@@ -4,6 +4,8 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import MyName from '../components/MyName'
 import MyPicture from '../components/MyPicture'
+import MyInfo from '../components/MyInfo'
+import Footer from '../components/Footer'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -11,26 +13,28 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 5000);// simulate a 5 secs loading time
+    }, 9000);// simulate a 9 secs loading time
   }, []);
 
   return (
-    <div>
+    <div className=''>
       {isLoading ? (
         <div className='flex justify-center items-center h-32 h-screen'>
-          <p className='text-gray-500 text-lg'>J | U</p>
+          <p className='text-3xl sm:text-5xl md:text-3xl lg:text-5xl animate-pulse'>J | U</p>
 
         </div>
       ) : (
 
         <div className={styles.container}>
           <Head>
-            <title>J | U</title>
+            <title>J | U - john uchendu</title>
             <meta name="description" content="Designed by John Uchendu" />
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" href="/img/6E971DC5-90D1-41A3-AF05-D7C4A3103FDA-removebg-preview.png" />
           </Head>
           <MyName />
           <MyPicture />
+          <MyInfo />
+          <Footer />
           <main className=''>
             <h1 className=''></h1>
           </main>
@@ -42,7 +46,7 @@ export default function Home() {
               rel="noopener noreferrer"
             >
 
-              
+
             </a>
           </footer>
         </div>
