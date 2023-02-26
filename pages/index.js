@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import MyName from '../components/MyName'
-import MyPicture from '../components/MyPicture'
-import MyInfo from '../components/MyInfo'
+import MyName from './MyName'
+import MyPicture from './MyPicture'
+import MyProject from './MyProject'
+import MyInfo from './MyInfo'
 import Footer from '../components/Footer'
+
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +35,7 @@ export default function Home() {
           </Head>
           <MyName />
           <MyPicture />
+          <MyProject />
           <MyInfo />
           <Footer />
           <main className=''>
