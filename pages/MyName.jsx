@@ -20,8 +20,8 @@ const MyName = () => {
 
             ) : (
                 <h1 className="text-xl md:text-2xl lg:text-3xl 
-                    font-mono text-center
-                     md:py-12 my-4 md:my-8">
+                    font-mono text-center p-10
+                      my-4 md:my-8">
                     John | Uchendu
                 </h1>
             )}

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import SubHeading from '../components/SubHeadings';
 
 const MyInfo = () => {
     const [isloading, setIsLoading] = useState(true);
@@ -13,14 +14,14 @@ const MyInfo = () => {
 
     return (
         <div>
+            <SubHeading header='ABOUT' /><hr />
             {isloading ? (
                 <div className='flex justify-center items-center h-32'>
                     <p className='text-gray-400 text-lg animate-pulse'>...</p>
                 </div>
             ) : (
-
-                <p className="text-[10px] sm:text-xs md:text-2xl lg:text-sm font-mono text-center
-                md:py-12 my-4 md:my-8 ">Born in {"'97"} in Nigeria, a country filled with vibrant culture and
+                <p className="text-[8px] sm:text-xs md:text-2xl lg:text-sm font-mono text-center
+                md:pb-12  ">Born in {"'97"} in Nigeria, a country filled with vibrant culture and
                     rich traditions. As a young child, I attended Cecilia Learning Academy briefly then Montessori International School, where I began
                     my journey of growth and self-discovery. <br /><br />
                     From the moment I stepped foot into Preston International School, I knew that I was in for an adventure.

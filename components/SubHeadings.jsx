@@ -1,9 +1,11 @@
 import React from 'react'
 
-const Headings = (props) => {
+const SubHeading = (props) => {
   return (
-    <h1>{props.header}</h1>
+    <><br />
+      <h1 className='text-[10px] sm:text-xs md:text-md lg:text-2xl pb-3'>{props.header}</h1>
+    </>
   )
 }
 
-export default Headings
+export default SubHeading

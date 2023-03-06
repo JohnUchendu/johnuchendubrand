@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className=''>
+    <div className='m-10'>
       {isLoading ? (
         <div className='flex justify-center items-center h-32 h-screen'>
           <p className='text-3xl sm:text-5xl md:text-3xl lg:text-5xl animate-pulse'>J | U</p>
